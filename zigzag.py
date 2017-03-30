@@ -23,8 +23,6 @@ def zigzag(input):
 
     vmax = input.shape[0]
     hmax = input.shape[1]
-    
-    #print(vmax ,hmax )
 
     i = 0
 
