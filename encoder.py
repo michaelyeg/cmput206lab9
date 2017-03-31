@@ -96,7 +96,7 @@ for i in range(nbh):
             reshaped = np.reshape(reordered, (8, 8))
             
             # copy reshaped matrix into padded_img on current block corresponding indices
-            block = copy.deepcopy(reshaped)
+            padded_img[row_ind_1: row_ind_2, col_ind_1: col_ind_2] = copy.deepcopy(reshaped)
 
 cv2.imshow('encoded image', np.uint8(padded_img))
 
